@@ -1,20 +1,14 @@
-import React, { Component, component } from "react";
+import React, { Component } from "react";
 
 class Header extends Component {
   render() {
     return (
       <nav>
         <div className="nav-wrapper">
-          <a className="left brand-logo"> Emaily</a>
+          <a className="left brand-logo">Emaily</a>
           <ul className="right">
             <li>
-              <a href="sass.html">Login with Google</a>
-            </li>
-            <li>
-              <a href="badges.html">Components</a>
-            </li>
-            <li>
-              <a href="collapsible.html">JavaScript</a>
+              <a>Login With Google</a>
             </li>
           </ul>
         </div>
