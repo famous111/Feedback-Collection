@@ -9,7 +9,7 @@ class Header extends Component {
       case false:
         return (
           <li>
-            <a href="/auth/goolge">Login With Google</a>
+            <a href="/auth/google">Login With Google</a>
           </li>
         );
       default:
@@ -21,7 +21,6 @@ class Header extends Component {
     }
   }
   render() {
-    console.log(this.props);
     return (
       <nav>
         <div className="nav-wrapper">
