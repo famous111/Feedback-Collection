@@ -5,13 +5,14 @@ const passport = require("passport");
 const bodyParser = require("body-parser");
 const keys = require("./config/keys");
 require("./models/User"); // load schema to collections first
+require("./models/Survey");
 require("./services/passport"); // then use the defined collections
 
 mongoose.connect(keys.mongoURI);
 
 const app = express();
 
-app.use(bodyParser.json());
+app.use(express.json());
 app.use(
   cookieSession({
     maxAge: 30 * 24 * 60 * 60 * 1000, // 30 days in milliseconds
