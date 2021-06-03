@@ -25,6 +25,7 @@ app.use(passport.session());
 
 require("./routes/authRoutes")(app);
 require("./routes/billingRoutes")(app);
+require("./routes/surveyRoutes")(app);
 
 // const PORT = process.env.env.PORT
 const PORT = 5000; // use port 5000 at localhost
