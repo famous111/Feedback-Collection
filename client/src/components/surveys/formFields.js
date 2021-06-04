@@ -5,5 +5,8 @@ export default [
   },
   { label: "Subject Line", name: "subject" },
   { label: "Email Body", name: "body" },
-  { label: "Recipient List", name: "emails" },
+  {
+    label: "Recipient List (email addresses separated by comma)",
+    name: "recipients",
+  },
 ];
