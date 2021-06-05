@@ -28,6 +28,6 @@ require("./routes/billingRoutes")(app);
 require("./routes/surveyRoutes")(app);
 
 // const PORT = process.env.env.PORT
-const PORT = 5000; // use port 5000 at localhost
+const PORT = process.env.PORT || 5000; // use port 5000 at localhost
 app.listen(PORT);
 // http://localhost:5000
