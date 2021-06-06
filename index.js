@@ -8,6 +8,7 @@ require("./models/User"); // load schema to collections first
 require("./models/Survey");
 require("./services/passport"); // then use the defined collections
 
+mongoose.Promise = global.Promise;
 mongoose.connect(keys.mongoURI, {
   useNewUrlParser: true,
   useCreateIndex: true,
